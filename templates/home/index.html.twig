@@ -1,0 +1,197 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vayounette Illustration{% endblock %}
+
+{% block body %}
+    <header>
+        <ul class="nav-list-home">
+            <li><a href="{{ path('app_home') }}" class="active">Accueil</a></li>
+            <li><a href="{{ path('app_about') }}">vayounette</a></li>
+            <li><a href="{{ path('app_portefolio') }}">Portefolio</a></li>
+            <li><a href="{{ path('app_market') }}">market</a></li>
+            <li><a href="{{ path('contact_add') }}">contact</a></li>
+        </ul>
+    </header>
+
+    <section class="section-img">
+        <img id="etoiles" src="{{ asset('img/home_img/etoiles.png') }}" alt="etoiles image">
+        <img id="lune" src="{{ asset('img/home_img/lune.png') }}" alt="lune image">
+        <img id="nuages" src="{{ asset('img/home_img/nuages.png') }}" alt="nuages image">
+        <img id="montagne" src="{{ asset('img/home_img/montagne.png') }}" alt="montagne image">
+        <a href="{{ path('app_portefolio') }}" id="btn_section_img">DECOUVRIR</a>
+        <img id="foret" src="{{ asset('img/home_img/foret.png') }}" alt="foret front">
+    </section>
+
+<!--    GALLERY -->
+
+    <section class="section-gallery">
+        <div class="gallery-container">
+            <h2 class="gallery-title">Mon univers</h2>
+            <div class="img-gallery">
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
+                    <img src="{{ asset('img/gallery_img/gallery1.jpg') }}" alt="gallery image">
+                </div>
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
+                    <img src="{{ asset('img/gallery_img/gallery2.jpg') }}" alt="gallery image">
+                </div>
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
+                    <img src="{{ asset('img/gallery_img/gallery3.jpg') }}" alt="gallery image">
+                </div>
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
+                    <img src="{{ asset('img/gallery_img/gallery4.jpg') }}" alt="gallery image">
+                </div>
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
+                    <img src="{{ asset('img/gallery_img/gallery5.jpg') }}" alt="gallery image">
+                </div>
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
+                    <img src="{{ asset('img/gallery_img/gallery6.jpg') }}" alt="gallery image">
+                </div>
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
+                    <img src="{{ asset('img/gallery_img/gallery7.jpg') }}" alt="gallery image">
+                </div>
+                <div class="pic">
+                    <div class="pic-link">
+                        <p><a href="{{ path('app_portefolio') }}">Portefolio</a></p>
+                    </div>
+                    <img src="{{ asset('img/gallery_img/gallery8.jpg') }}" alt="gallery image">
+                </div>
+            </div>
+        </div>
+        <div class="plus">
+            <h3 class="plus-button"><a href="{{ path('app_portefolio') }}">Voir le portefolio</a></h3>
+        </div>
+    </section>
+
+<!--    PRESENTATION    -->
+
+    <section class="section-presentation">
+        <h2 class="gallery-title">Qui je suis</h2>
+
+        <div class="presentation-paralax"></div>
+
+        <div class="presentation-top">
+            <h2 class="presentation-title">Vayounette Illustratrice</h2>
+            <p>Vayounette est artiste illustratrice et graphiste pour la presse magazine française et internationale, les livres et la publicité. On retrouve ses personnages kawai, stylisés et colorés essentiellement dans des univers etrange et inquietant.</p>
+        </div>
+        <div class="plus">
+            <h3 class="plus-button"><a href="{{ path('app_about') }}">Lire la suite</a></h3>
+        </div>
+        
+        <div class="presentation-mid">
+            <div class="client">
+                <div class="inter-presentation"></div>
+                <h2 class="gallery-title">Clients</h2>
+                <div class="carousel-contain-slider">
+                    <div class="carousel-slide-track">
+            
+                        <!--    carousel A  -->
+            
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+                        </div>
+            
+                        <!--    carousel A  -->
+                        
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/Logo_Hachette.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/larousse_logo.png') }}" alt="">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="{{ asset('img/icon/playbac_logo.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="presentation-paralax2"></div>
+    </section>
+
+    <script>
+        let etoiles = document.getElementById('etoiles');
+        let lune = document.getElementById('lune');
+        let nuages = document.getElementById('nuages');
+        let montagne = document.getElementById('montagne');
+        let text_section_img = document.getElementById('text_section_img');
+        let btn_section_img = document.getElementById('btn_section_img');
+        let foret = document.getElementById('foret');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            etoiles.style.left = value  * 0.25 + 'px';
+            lune.style.top = value  * 1.05 + 'px';
+            montagne.style.top = value  * 0.5 + 'px';
+            foret.style.top = value  * 0 + 'px';
+            nuages.style.marginRight = value  * 4 + 'px';
+            nuages.style.marginTop = value  * 1.5 + 'px';
+            btn_section_img.style.marginTop = value  * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+{% include "footer/footer.html.twig" %}
+{% endblock %}

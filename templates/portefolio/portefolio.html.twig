@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portefolio{% endblock %}
+{% block body %}
+<header class="navbar-global">
+    <h2><a href="#"><img id="vayounette_nav_icon" src="{{ asset('img/logo/vayounette.png') }}" alt="Logo Vayounette"></a></h2>
+    <nav class="nav-global">
+        <li><a href="{{ path('app_home') }}">Accueil</a></li>
+        <li><a href="{{ path('app_about') }}">Vayounette</a></li>
+        <li><a href="{{ path('app_portefolio') }}" class="active">Portefolio</a></li>
+        <li><a href="{{ path('app_market') }}">Market</a></li>
+        <li><a href="{{ path('contact_add') }}">Contact</a></li>
+    </nav> 
+</header>
+
+<section class="section-portefolio">
+    <div class="portefolio-title-contain">
+        <h2 class="portefolio-title">Portefolio</h2>
+    </div>
+    <input type="radio" name="Photos" id="check1" checked>
+    <input type="radio" name="Photos" id="check2">
+    <input type="radio" name="Photos" id="check3">
+    <input type="radio" name="Photos" id="check4">
+    <div class="gallery-container">
+        <div class="top-content">
+            <label for="check1">Tous</label>
+            <label for="check2">Jeux</label>
+            <label for="check3">Enfants</label>
+            <label for="check4">Projets</label>
+         </div>
+    </div>
+    <div class="portefolio-contain">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery1.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery2.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery3.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery4.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery5.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery6.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery7.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery8.jpg') }}" alt="">
+            </div>
+            <div class="grid-item">
+                <img src="{{ asset('img/gallery_img/gallery9.jpg') }}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script>
+    var grid = document.querySelector('.grid');
+
+    var msnry = new Masonry( grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+    gutter: 10
+    });
+
+    imagesLoaded( grid ).on( 'progress', function() {
+     msnry.layout();
+    });
+</script>
+{% include "footer/footer.html.twig" %}
+{% endblock %}
+
+
